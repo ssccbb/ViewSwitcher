@@ -12,4 +12,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="view switcher" />
+    <ViewFlipper
+        android:id="@+id/vf_content"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="450dp">
+        <include layout="@layout/layout_1"
+            android:id="@+id/layout1"/>
+        <include layout="@layout/layout_2"
+            android:id="@+id/layout2"/>
+        <include layout="@layout/layout_3"
+            android:id="@+id/layout3"/>
+    </ViewFlipper>
 </RelativeLayout>
